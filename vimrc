@@ -15,6 +15,7 @@ let g:fuzzy_ignore = "db/asp/minisite_images/*"
 nmap <Tab> gt
 nmap <S-Tab> gT
 nmap <F2> :BufExplorer<Enter>
+nmap <F3> :noh<Enter>
 
 augroup filetypedetect
   autocmd BufRead,BufNewFile *.prawn set filetype=ruby
