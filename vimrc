@@ -1,6 +1,7 @@
 source ~/.vim/vimrc
 
 colorscheme desert
+set nowrap
 set nu
 set sts=2
 set sw=2
