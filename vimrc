@@ -1,6 +1,12 @@
 source ~/.vim/vimrc
 
-colorscheme desert
+if $COLORTERM == 'gnome-terminal'
+  set term=gnome-256color
+  colorscheme railscasts
+else
+  colorscheme desert
+endif 
+
 set nowrap
 set nu
 set sts=2
