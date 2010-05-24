@@ -1,11 +1,6 @@
 source ~/.vim/vimrc
 
-if $COLORTERM == 'gnome-terminal'
-  set term=gnome-256color
-  colorscheme railscasts
-else
-  colorscheme desert
-endif 
+colorscheme desert
 
 set nowrap
 set nu
@@ -20,7 +15,7 @@ let g:fuzzy_ignore = "vendor/*"
 nmap <Tab> gt
 nmap <S-Tab> gT
 nmap <F2> :BufExplorer<Enter>
-nmap <F3> :noh<Enter>
+nmap <silent> <F3> :noh<Enter>
 nmap <F4> gg=G''
 cmap <F9> vendor/extensions/site/
 
