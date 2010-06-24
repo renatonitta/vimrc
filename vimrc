@@ -1,6 +1,14 @@
 source ~/.vim/vimrc
 
-colorscheme desert
+if $COLORTERM == 'gnome-terminal'
+  set term=gnome-256color
+  colorscheme railscasts
+else
+  colorscheme desert
+endif
+
+set mouse=a
+set ttymouse=xterm2
 
 set nowrap
 set nu
