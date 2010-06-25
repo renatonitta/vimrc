@@ -27,3 +27,8 @@ nmap <silent> <F2> :BufExplorer<Enter>
 nmap <silent> <F3> :noh<Enter>
 nmap <F4> gg=G''
 cmap <F9> vendor/extensions/site/
+cmap <C-t> tabnew <F9>
+
+augroup filetypedetect
+  autocmd BufRead,BufNewFile *.prawn set filetype=ruby
+augroup END
