@@ -20,6 +20,8 @@ set guioptions-=T
 let g:fuzzy_ignore = "gems/*"
 let g:fuzzy_ignore = "vendor/*"
 
+ab rdb require 'ruby-debug';debugger
+
 nmap <Tab> gt
 nmap <S-Tab> gT
 nmap <silent> <C-t> :CommandT<Enter>
