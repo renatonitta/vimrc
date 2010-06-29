@@ -1,3 +1,5 @@
+" Importing Akita's vimrc
+" http://github.com/akitaonrails/vimfiles
 source ~/.vim/vimrc
 
 if $COLORTERM == 'gnome-terminal'
