@@ -33,6 +33,8 @@ nmap <F4> gg=G''
 cmap <F9> vendor/extensions/site/
 cmap <C-t> tabnew <F9>
 
+match Todo /\s\+$/
+
 augroup filetypedetect
   autocmd BufRead,BufNewFile *.prawn set filetype=ruby
 augroup END
