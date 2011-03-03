@@ -26,8 +26,18 @@ nmap <silent> <C-t> :CommandT<Enter>
 nmap <silent> <F2> :BufExplorer<Enter>
 nmap <silent> <F3> :noh<Enter>
 nmap <silent> <F4> gg=G''
-nmap <silent> <F5> :set lines=999 columns=999<Enter>
+nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+nmap <silent> <F6> :set lines=999 columns=999<Enter>
 
 augroup filetypedetect
   autocmd BufRead,BufNewFile *.prawn set filetype=ruby
 augroup END
+
+noremap  <Up> ""
+noremap! <Up> <Esc>
+noremap  <Down> ""
+noremap! <Down> <Esc>
+noremap  <Left> ""
+noremap! <Left> <Esc>
+noremap  <Right> ""
+noremap! <Right> <Esc>
