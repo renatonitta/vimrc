@@ -23,6 +23,7 @@ set guioptions-=T
 ab rdb require 'ruby-debug';debugger
 
 nmap <silent> <C-t> :CommandT<Enter>
+nmap <C-h> i$<Esc>f(r f)xF$x
 nmap <silent> <F2> :BufExplorer<Enter>
 nmap <silent> <F3> :noh<Enter>
 nmap <silent> <F4> gg=G''
