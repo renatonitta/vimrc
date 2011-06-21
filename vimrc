@@ -6,17 +6,17 @@ if $COLORTERM == 'gnome-terminal'
   set term=gnome-256color
   colorscheme railscasts
 else
-  colorscheme desert
+  colorscheme railscasts
 endif
 
 set mouse=a
 set ttymouse=xterm2
 
+set guifont=Monospace\ 12
 set nowrap
 set nu
 set sts=2
 set sw=2
-set guifont=monaco
 set guioptions-=m
 set guioptions-=T
 
@@ -34,8 +34,3 @@ nmap Ç :
 augroup filetypedetect
   autocmd BufRead,BufNewFile *.prawn set filetype=ruby
 augroup END
-
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
