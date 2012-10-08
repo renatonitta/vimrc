@@ -2,12 +2,7 @@
 " http://github.com/akitaonrails/vimfiles
 source ~/.vim/vimrc
 
-if $COLORTERM == 'gnome-terminal'
-  set term=gnome-256color
-  colorscheme railscasts
-else
-  colorscheme railscasts
-endif
+colorscheme railscasts
 
 set mouse=a
 set ttymouse=xterm2
