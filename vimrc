@@ -12,7 +12,6 @@ endif
 set mouse=a
 set ttymouse=xterm2
 
-set guifont=Monospace\ 11
 set nowrap
 set nu
 set sts=2
