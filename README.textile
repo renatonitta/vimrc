@@ -1,5 +1,11 @@
+h1. My vimrc
+
+I use YADR for a bunch of things, including vimrc, this is just simple configs to be set after YADR defaults.
+
 h1. Installation:
 
-<pre><code>git clone git://github.com/renatocn/vimrc.git ~/projetos/vimrc
-ln -s ~/projetos/vimrc/vimrc ~/.vimrc</code></pre>
+<pre><code>
+git clone git://github.com/renatocn/vimrc.git ~/projects/config/vimrc
+ln -s ~/projects/vimrc/vimrc ~/.yadr/vim/after/.vimrc.after
+</code></pre>
 
