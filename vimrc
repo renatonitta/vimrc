@@ -1,30 +1,16 @@
-" Importing Akita's vimrc
-" http://github.com/akitaonrails/vimfiles
-source ~/.vim/vimrc
+" enable arrows for normal and visual modes
+nmap <up> k
+nmap <down> j
+nmap <left> h
+nmap <right> l
+vmap <up> k
+vmap <down> j
+vmap <left> h
+vmap <right> l
 
-colorscheme railscasts
+" shorcut to set idetation to tab
+nmap <C-l> :set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab<Enter>
 
-set mouse=a
-set ttymouse=xterm2
+" shortcut to set identation to 2 spaces
+nmap <C-k> :set softtabstop=2 shiftwidth=2 expandtab<Enter>
 
-set nowrap
-set nu
-set sts=2
-set sw=2
-set guioptions-=m
-set guioptions-=T
-
-ab rdb require 'ruby-debug';debugger
-
-nmap <silent> <C-t> :CommandT<Enter>
-nmap <C-h> i$<Esc>f(r f)xF$x
-nmap <silent> <F2> :BufExplorer<Enter>
-nmap <silent> <F3> :noh<Enter>
-nmap <silent> <F4> gg=G''
-nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
-nmap <silent> <F6> :set lines=999 columns=999<Enter>
-nmap Ç :
-
-augroup filetypedetect
-  autocmd BufRead,BufNewFile *.prawn set filetype=ruby
-augroup END
